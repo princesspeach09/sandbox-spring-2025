@@ -15,7 +15,7 @@ public class Algorithm {
         int fib = 1;
         int prevFib = 1;
 
-        for (int i=2; i<n; i++) {
+        for (int i=2; i<=n; i++) {
             int temp = fib;
             fib += prevFib;
             prevFib = temp;
@@ -51,7 +51,7 @@ public class Algorithm {
 
 
         for (int x = 0; x <= 50; x++) {
-            System.out.println("Fibonacci (" + x + ") = " + fibonacciRecursive(x));
+            System.out.println("Fibonacci (" + x + ") = " + memo(x));
         }
     }
 }
